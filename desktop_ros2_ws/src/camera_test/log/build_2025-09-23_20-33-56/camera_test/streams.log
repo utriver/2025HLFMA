@@ -1,0 +1,28 @@
+[0.551s] Invoking command in '/home/yeoungjun/camera_test': PYTHONPATH=/home/yeoungjun/camera_test/build/camera_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yeoungjun/camera_test/install/camera_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/camera_test build --build-base /home/yeoungjun/camera_test/build/camera_test/build install --record /home/yeoungjun/camera_test/build/camera_test/install.log --single-version-externally-managed install_data
+[0.732s] running egg_info
+[0.742s] writing build/camera_test/camera_test.egg-info/PKG-INFO
+[0.742s] writing dependency_links to build/camera_test/camera_test.egg-info/dependency_links.txt
+[0.743s] writing entry points to build/camera_test/camera_test.egg-info/entry_points.txt
+[0.743s] writing requirements to build/camera_test/camera_test.egg-info/requires.txt
+[0.743s] writing top-level names to build/camera_test/camera_test.egg-info/top_level.txt
+[0.763s] reading manifest file 'build/camera_test/camera_test.egg-info/SOURCES.txt'
+[0.764s] writing manifest file 'build/camera_test/camera_test.egg-info/SOURCES.txt'
+[0.764s] running build
+[0.764s] running build_py
+[0.764s] copying camera_test/vision_test_publisher.py -> /home/yeoungjun/camera_test/build/camera_test/build/lib/camera_test
+[0.764s] copying camera_test/__init__.py -> /home/yeoungjun/camera_test/build/camera_test/build/lib/camera_test
+[0.764s] copying camera_test/vision_test_subscriber.py -> /home/yeoungjun/camera_test/build/camera_test/build/lib/camera_test
+[0.764s] running install
+[0.769s] running install_lib
+[0.779s] running install_data
+[0.779s] copying resource/camera_test -> /home/yeoungjun/camera_test/install/camera_test/share/ament_index/resource_index/packages
+[0.779s] copying package.xml -> /home/yeoungjun/camera_test/install/camera_test/share/camera_test
+[0.779s] copying launch/vision_test.launch.py -> /home/yeoungjun/camera_test/install/camera_test/share/camera_test/launch
+[0.779s] running install_egg_info
+[0.791s] removing '/home/yeoungjun/camera_test/install/camera_test/lib/python3.10/site-packages/camera_test-0.0.0-py3.10.egg-info' (and everything under it)
+[0.791s] Copying build/camera_test/camera_test.egg-info to /home/yeoungjun/camera_test/install/camera_test/lib/python3.10/site-packages/camera_test-0.0.0-py3.10.egg-info
+[0.791s] running install_scripts
+[0.887s] Installing vision_test_publisher script to /home/yeoungjun/camera_test/install/camera_test/lib/camera_test
+[0.887s] Installing vision_test_subscriber script to /home/yeoungjun/camera_test/install/camera_test/lib/camera_test
+[0.887s] writing list of installed files to '/home/yeoungjun/camera_test/build/camera_test/install.log'
+[0.905s] Invoked command in '/home/yeoungjun/camera_test' returned '0': PYTHONPATH=/home/yeoungjun/camera_test/build/camera_test/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/yeoungjun/camera_test/install/camera_test/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base build/camera_test build --build-base /home/yeoungjun/camera_test/build/camera_test/build install --record /home/yeoungjun/camera_test/build/camera_test/install.log --single-version-externally-managed install_data

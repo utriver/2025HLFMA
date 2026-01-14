@@ -1,0 +1,47 @@
+# ~/ros2_ws/src/gps/config/navsat_config.yaml
+ekf_filter_node:
+  ros__parameters:
+    frequency: 30.0
+    sensor_timeout: 0.1
+    two_d_mode: true
+    odom_frame: "odom"
+    base_link_frame: "base_link"
+    world_frame: "odom"
+    publish_tf: true
+    odom0: "odometry/gps"
+    odom0_config: [true,  true,  false, false, false, false, false, false, false, false, false, false, false, false, false]
+    odom0_differential: false
+    twist0: "ublox_gps_node/fix_velocity"
+    twist0_config: [false, false, false, false, false, false, true,  true,  false, false, false, false, false, false, false]
+    imu0: "imu/data"
+    imu0_config: [false, false, false, false, false, true, false, false, false, false, false, true, false, false, false]
+    imu0_differential: false
+    imu0_relative: true
+    imu0_remove_gravitational_acceleration: true
+    qos_overrides:
+      imu0.subscription:
+        reliability: reliable
+      odom0.subscription:
+        reliability: reliable
+      twist0.subscription:
+        reliability: reliable
+
+navsat_transform_node:
+  ros__parameters:
+  
+    frequency: 10.0
+    delay: 0.0
+    magnetic_declination_radians: 0.0
+    yaw_offset: 0.0
+    zero_altitude: false
+    publish_filtered_gps: true
+    use_local_cartesian: false
+    world_frame: "odom"
+    broadcast_utm_transform: true
+    # imu: "imu/data"
+    qos_overrides:
+      imu.subscription:
+        reliability: reliable
+      gps/fix.subscription:
+        reliability: reliable
+      # 문제의 원인이었던 odometry/filtered 구독 설정을 완전히 삭제했습니다.

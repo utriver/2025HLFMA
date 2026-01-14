@@ -1,0 +1,8 @@
+Metadata-Version: 2.1
+Name: camera_test
+Version: 0.0.0
+Summary: Camera test package
+Maintainer: yeoungjun
+Maintainer-email: yeoungjun@todo.todo
+License: TODO: License declaration
+Requires-Dist: setuptools

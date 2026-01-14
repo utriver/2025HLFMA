@@ -1,0 +1,3 @@
+[console_scripts]
+vision_test_publisher = camera_test.vision_test_publisher:main
+vision_test_subscriber = camera_test.vision_test_subscriber:main

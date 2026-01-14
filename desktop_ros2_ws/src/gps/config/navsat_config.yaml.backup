@@ -1,0 +1,126 @@
+# ~/ros2_ws/src/gps/config/navsat_config.yaml
+
+# NavSat Transform Node 설정
+navsat_transform_node:
+  ros__parameters:
+    # 입력 토픽
+    gps_topic: "/ublox_gps_node/fix"
+    imu_topic: "/imu/data"
+    odometry_topic: "/odometry/filtered"
+    
+    # 출력 토픽  
+    output_topic: "/gps/filtered"
+    
+    # 좌표계 프레임
+    map_frame_id: "map"
+    odom_frame_id: "odom" 
+    base_link_frame_id: "base_link"
+    world_frame_id: "odom"
+    
+    # 기준점 자동 설정 (RTK 사용)
+    datum_set_automatically: true
+    
+    # 로컬 좌표계 사용
+    use_local_cartesian: true
+    publish_filtered_gps: true
+    
+    # 타임아웃 설정
+    transform_timeout: 0.2
+    gps_timeout: 1.0
+    
+    # 업데이트 주파수
+    frequency: 10.0
+    
+    # GPS 지연 보상
+    delay: 0.0
+
+# EKF Filter Node 설정 (메인 칼만필터)
+ekf_filter_node:
+  ros__parameters:
+    # 좌표계 설정
+    odom_frame: "odom"
+    base_link_frame: "base_link" 
+    map_frame: "map"
+    world_frame: "odom"
+    
+    # 출력 토픽 (Pure Pursuit에서 사용할 메인 토픽!)
+    odom_topic: "/odometry/filtered"
+    
+    # GPS 입력 설정 (navsat_transform_node에서 변환된 것)
+    gps0: "/gps/filtered"
+    gps0_config: [true,  true,  false,  # x, y, z 위치 (z는 2D라서 false)
+                  false, false, false,  # roll, pitch, yaw
+                  false, false, false,  # vx, vy, vz 속도 (GPS 속도는 별도 처리)
+                  false, false, false,  # vroll, vpitch, vyaw  
+                  false, false, false]  # ax, ay, az
+    
+    # GPS 속도 입력 (ublox에서 직접)
+    gps0_vel: "/ublox_gps_node/fix_velocity"
+    gps0_vel_config: [false, false, false,  # x, y, z 위치
+                      false, false, false,  # roll, pitch, yaw
+                      true,  true,  false,  # vx, vy, vz 속도 ✅
+                      false, false, false,  # vroll, vpitch, vyaw
+                      false, false, false]  # ax, ay, az
+
+    # IMU 입력 설정  
+    imu0: "/imu/data"
+    imu0_config: [false, false, false,  # x, y, z 위치
+                  true,  true,  true,   # roll, pitch, yaw ✅
+                  false, false, false,  # vx, vy, vz 속도
+                  true,  true,  true,   # vroll, vpitch, vyaw ✅ 
+                  true,  true,  true]   # ax, ay, az ✅
+    
+    # GPS 설정
+    gps0_differential: false
+    gps0_relative: false
+    gps0_vel_differential: false
+    gps0_vel_relative: false
+    
+    # IMU 설정
+    imu0_differential: false
+    imu0_relative: false
+    imu0_remove_gravitational_acceleration: true
+    
+    # 업데이트 주파수 (IMU 100Hz에 맞춤)
+    frequency: 50.0  # GPS 10Hz + IMU 100Hz 중간값
+    
+    # 센서 타임아웃
+    sensor_timeout: 0.2
+    
+    # 2D 모드 (차량용)
+    two_d_mode: true
+    
+    # 프로세스 노이즈 공분산 (15x15 행렬)
+    # 순서: x, y, z, roll, pitch, yaw, vx, vy, vz, vroll, vpitch, vyaw, ax, ay, az
+    process_noise_covariance: [0.05, 0,    0,    0,    0,    0,    0,     0,     0,    0,    0,    0,    0,    0,    0,
+                               0,    0.05, 0,    0,    0,    0,    0,     0,     0,    0,    0,    0,    0,    0,    0,
+                               0,    0,    0.06, 0,    0,    0,    0,     0,     0,    0,    0,    0,    0,    0,    0,
+                               0,    0,    0,    0.03, 0,    0,    0,     0,     0,    0,    0,    0,    0,    0,    0,
+                               0,    0,    0,    0,    0.03, 0,    0,     0,     0,    0,    0,    0,    0,    0,    0,
+                               0,    0,    0,    0,    0,    0.06, 0,     0,     0,    0,    0,    0,    0,    0,    0,
+                               0,    0,    0,    0,    0,    0,    0.025, 0,     0,    0,    0,    0,    0,    0,    0,
+                               0,    0,    0,    0,    0,    0,    0,     0.025, 0,    0,    0,    0,    0,    0,    0,
+                               0,    0,    0,    0,    0,    0,    0,     0,     0.04, 0,    0,    0,    0,    0,    0,
+                               0,    0,    0,    0,    0,    0,    0,     0,     0,    0.01, 0,    0,    0,    0,    0,
+                               0,    0,    0,    0,    0,    0,    0,     0,     0,    0,    0.01, 0,    0,    0,    0,
+                               0,    0,    0,    0,    0,    0,    0,     0,     0,    0,    0,    0.02, 0,    0,    0,
+                               0,    0,    0,    0,    0,    0,    0,     0,     0,    0,    0,    0,    0.01, 0,    0,
+                               0,    0,    0,    0,    0,    0,    0,     0,     0,    0,    0,    0,    0,    0.01, 0,
+                               0,    0,    0,    0,    0,    0,    0,     0,     0,    0,    0,    0,    0,    0,    0.015]
+
+    # 초기 추정 공분산
+    initial_estimate_covariance: [1e-9, 0,    0,    0,    0,    0,    0,    0,    0,    0,     0,     0,     0,    0,    0,
+                                  0,    1e-9, 0,    0,    0,    0,    0,    0,    0,    0,     0,     0,     0,    0,    0,
+                                  0,    0,    1e-9, 0,    0,    0,    0,    0,    0,    0,     0,     0,     0,    0,    0,
+                                  0,    0,    0,    1e-9, 0,    0,    0,    0,    0,    0,     0,     0,     0,    0,    0,
+                                  0,    0,    0,    0,    1e-9, 0,    0,    0,    0,    0,     0,     0,     0,    0,    0,
+                                  0,    0,    0,    0,    0,    1e-9, 0,    0,    0,    0,     0,     0,     0,    0,    0,
+                                  0,    0,    0,    0,    0,    0,    1e-9, 0,    0,    0,     0,     0,     0,    0,    0,
+                                  0,    0,    0,    0,    0,    0,    0,    1e-9, 0,    0,     0,     0,     0,    0,    0,
+                                  0,    0,    0,    0,    0,    0,    0,    0,    1e-9, 0,     0,     0,     0,    0,    0,
+                                  0,    0,    0,    0,    0,    0,    0,    0,    0,    1e-9,  0,     0,     0,    0,    0,
+                                  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,     1e-9,  0,     0,    0,    0,
+                                  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,     0,     1e-9,  0,    0,    0,
+                                  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,     0,     0,     1e-9, 0,    0,
+                                  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,     0,     0,     0,    1e-9, 0,
+                                  0,    0,    0,    0,    0,    0,    0,    0,    0,    0,     0,     0,     0,    0,    1e-9]

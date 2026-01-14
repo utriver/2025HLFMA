@@ -1,0 +1,59 @@
+# ~/ros2_ws/src/gps/config/ublox_config.yaml
+ublox_gps_node:
+  ros__parameters:
+    device: /dev/serial/by-id/usb-u-blox_AG_-_www.u-blox.com_u-blox_GNSS_receiver-if00
+
+    # USB는 보드레이트 영향 거의 없음(무시돼도 OK)
+    baudrate: 460800
+
+    # 측정주기 10Hz(100ms), 네비게이션 레이트 1(=1Hz): F9P 권장 조합
+    rate: 10.0
+    nav_rate: 1
+
+    # 동적 모델
+    dmodel: 4          # (= automotive)  ※ 기존 'dynamic_model' 대신 dmodel 사용을 권장
+
+    # TMODE3 끔(로버 모드)
+    tmode3: 0
+
+    # GNSS 사용
+    gnss:
+      gps: true
+      glonass: true
+      beidou: true
+      galileo: true
+
+    # USB 포트 프로토콜: 입력 UBX+NMEA+RTCM3X, 출력 UBX+NMEA
+    usb:
+      in: 35           # UBX(1)+NMEA(2)+RTCM3X(32)=35
+      out: 3           # UBX(1)+NMEA(2)=3
+
+    # ===== 지원/유용한 메시지만 명시적으로 켜기 =====
+    publish:
+      nav:
+        pvt: true          # 기본 위치/속도/시간
+        sat: true          # 위성 상태
+        status: true       # 내비게이션 상태
+        relposned: true    # RTK 상대 위치(고정/FLOAT 판단에 유용)
+      # ===== NACK 유발 가능 항목은 확실히 끄기 =====
+      rxm:
+        rtcm: true        # F9P는 RTCM "입력"만 필요, 출력 구독 불필요
+      mon:
+        hw: false          # 펌웨어/설정에 따라 거부될 수 있음
+      hnr:
+        pvt: false         # 고속 HNR 계열(대개 미사용/미지원)
+      esf:
+        ins: false         # ESF(IMU) 계열(F9P 보드에 IMU 없으면 NACK)
+        status: false
+      tim:
+        tm2: false         # 일부 타이밍 메시지 미지원
+      # 자세/헤딩 계열도 보통 미지원
+      # nav:
+      #   att: false
+      #   hpr: false
+
+    # SBAS/PPP
+    sbas:
+      enabled: false
+    enable_ppp: false
+

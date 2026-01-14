@@ -1,0 +1,41 @@
+running egg_info
+creating build/camera_test/camera_test.egg-info
+writing build/camera_test/camera_test.egg-info/PKG-INFO
+writing dependency_links to build/camera_test/camera_test.egg-info/dependency_links.txt
+writing entry points to build/camera_test/camera_test.egg-info/entry_points.txt
+writing requirements to build/camera_test/camera_test.egg-info/requires.txt
+writing top-level names to build/camera_test/camera_test.egg-info/top_level.txt
+writing manifest file 'build/camera_test/camera_test.egg-info/SOURCES.txt'
+reading manifest file 'build/camera_test/camera_test.egg-info/SOURCES.txt'
+writing manifest file 'build/camera_test/camera_test.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/yeoungjun/camera_test/build/camera_test/build
+creating /home/yeoungjun/camera_test/build/camera_test/build/lib
+creating /home/yeoungjun/camera_test/build/camera_test/build/lib/camera_test
+copying camera_test/vision_test_publisher.py -> /home/yeoungjun/camera_test/build/camera_test/build/lib/camera_test
+copying camera_test/__init__.py -> /home/yeoungjun/camera_test/build/camera_test/build/lib/camera_test
+copying camera_test/vision_test_subscriber.py -> /home/yeoungjun/camera_test/build/camera_test/build/lib/camera_test
+running install
+running install_lib
+creating /home/yeoungjun/camera_test/install/camera_test/lib/python3.10/site-packages/camera_test
+copying /home/yeoungjun/camera_test/build/camera_test/build/lib/camera_test/vision_test_publisher.py -> /home/yeoungjun/camera_test/install/camera_test/lib/python3.10/site-packages/camera_test
+copying /home/yeoungjun/camera_test/build/camera_test/build/lib/camera_test/__init__.py -> /home/yeoungjun/camera_test/install/camera_test/lib/python3.10/site-packages/camera_test
+copying /home/yeoungjun/camera_test/build/camera_test/build/lib/camera_test/vision_test_subscriber.py -> /home/yeoungjun/camera_test/install/camera_test/lib/python3.10/site-packages/camera_test
+byte-compiling /home/yeoungjun/camera_test/install/camera_test/lib/python3.10/site-packages/camera_test/vision_test_publisher.py to vision_test_publisher.cpython-310.pyc
+byte-compiling /home/yeoungjun/camera_test/install/camera_test/lib/python3.10/site-packages/camera_test/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/yeoungjun/camera_test/install/camera_test/lib/python3.10/site-packages/camera_test/vision_test_subscriber.py to vision_test_subscriber.cpython-310.pyc
+running install_data
+creating /home/yeoungjun/camera_test/install/camera_test/share/ament_index
+creating /home/yeoungjun/camera_test/install/camera_test/share/ament_index/resource_index
+creating /home/yeoungjun/camera_test/install/camera_test/share/ament_index/resource_index/packages
+copying resource/camera_test -> /home/yeoungjun/camera_test/install/camera_test/share/ament_index/resource_index/packages
+copying package.xml -> /home/yeoungjun/camera_test/install/camera_test/share/camera_test
+creating /home/yeoungjun/camera_test/install/camera_test/share/camera_test/launch
+copying launch/vision_test.launch.py -> /home/yeoungjun/camera_test/install/camera_test/share/camera_test/launch
+running install_egg_info
+Copying build/camera_test/camera_test.egg-info to /home/yeoungjun/camera_test/install/camera_test/lib/python3.10/site-packages/camera_test-0.0.0-py3.10.egg-info
+running install_scripts
+Installing vision_test_publisher script to /home/yeoungjun/camera_test/install/camera_test/lib/camera_test
+Installing vision_test_subscriber script to /home/yeoungjun/camera_test/install/camera_test/lib/camera_test
+writing list of installed files to '/home/yeoungjun/camera_test/build/camera_test/install.log'
