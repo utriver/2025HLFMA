@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing encoder_pkg.egg-info/PKG-INFO
+writing dependency_links to encoder_pkg.egg-info/dependency_links.txt
+writing entry points to encoder_pkg.egg-info/entry_points.txt
+writing requirements to encoder_pkg.egg-info/requires.txt
+writing top-level names to encoder_pkg.egg-info/top_level.txt
+reading manifest file 'encoder_pkg.egg-info/SOURCES.txt'
+writing manifest file 'encoder_pkg.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages/encoder-pkg.egg-link (link to .)
+Installing encoder_node script to /home/pi/ros2_ws/install/encoder_pkg/lib/encoder_pkg
+
+Installed /home/pi/ros2_ws/build/encoder_pkg
+running symlink_data
+symbolically linking /home/pi/ros2_ws/build/encoder_pkg/resource/encoder_pkg -> /home/pi/ros2_ws/install/encoder_pkg/share/ament_index/resource_index/packages
+symbolically linking /home/pi/ros2_ws/build/encoder_pkg/package.xml -> /home/pi/ros2_ws/install/encoder_pkg/share/encoder_pkg

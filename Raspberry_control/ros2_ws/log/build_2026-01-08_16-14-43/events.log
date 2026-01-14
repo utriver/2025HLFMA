@@ -1,0 +1,154 @@
+[0.000000] (-) TimerEvent: {}
+[0.002153] (encoder_pkg) JobQueued: {'identifier': 'encoder_pkg', 'dependencies': OrderedDict()}
+[0.002829] (encoder_pkg) JobStarted: {'identifier': 'encoder_pkg'}
+[0.088390] (-) TimerEvent: {}
+[0.189468] (-) TimerEvent: {}
+[0.290693] (-) TimerEvent: {}
+[0.391734] (-) TimerEvent: {}
+[0.494700] (-) TimerEvent: {}
+[0.596257] (-) TimerEvent: {}
+[0.697665] (-) TimerEvent: {}
+[0.799807] (-) TimerEvent: {}
+[0.901202] (-) TimerEvent: {}
+[1.002050] (-) TimerEvent: {}
+[1.102993] (-) TimerEvent: {}
+[1.203738] (-) TimerEvent: {}
+[1.304584] (-) TimerEvent: {}
+[1.405610] (-) TimerEvent: {}
+[1.506804] (-) TimerEvent: {}
+[1.614205] (-) TimerEvent: {}
+[1.715286] (-) TimerEvent: {}
+[1.816560] (-) TimerEvent: {}
+[1.917236] (-) TimerEvent: {}
+[2.018110] (-) TimerEvent: {}
+[2.119433] (-) TimerEvent: {}
+[2.221047] (-) TimerEvent: {}
+[2.322074] (-) TimerEvent: {}
+[2.423195] (-) TimerEvent: {}
+[2.524765] (-) TimerEvent: {}
+[2.626318] (-) TimerEvent: {}
+[2.727579] (-) TimerEvent: {}
+[2.829027] (-) TimerEvent: {}
+[2.930590] (-) TimerEvent: {}
+[3.031637] (-) TimerEvent: {}
+[3.132897] (-) TimerEvent: {}
+[3.233938] (-) TimerEvent: {}
+[3.335159] (-) TimerEvent: {}
+[3.437104] (-) TimerEvent: {}
+[3.538748] (-) TimerEvent: {}
+[3.640156] (-) TimerEvent: {}
+[3.740946] (-) TimerEvent: {}
+[3.867232] (-) TimerEvent: {}
+[3.968202] (-) TimerEvent: {}
+[4.080990] (-) TimerEvent: {}
+[4.187067] (-) TimerEvent: {}
+[4.288503] (-) TimerEvent: {}
+[4.389788] (-) TimerEvent: {}
+[4.491693] (-) TimerEvent: {}
+[4.592898] (-) TimerEvent: {}
+[4.694105] (-) TimerEvent: {}
+[4.795431] (-) TimerEvent: {}
+[4.896710] (-) TimerEvent: {}
+[4.998072] (-) TimerEvent: {}
+[5.103047] (-) TimerEvent: {}
+[5.203909] (-) TimerEvent: {}
+[5.304813] (-) TimerEvent: {}
+[5.405574] (-) TimerEvent: {}
+[5.506922] (-) TimerEvent: {}
+[5.614806] (-) TimerEvent: {}
+[5.715768] (-) TimerEvent: {}
+[5.817018] (-) TimerEvent: {}
+[5.918870] (-) TimerEvent: {}
+[6.020429] (-) TimerEvent: {}
+[6.121428] (-) TimerEvent: {}
+[6.222419] (-) TimerEvent: {}
+[6.323601] (-) TimerEvent: {}
+[6.424620] (-) TimerEvent: {}
+[6.525611] (-) TimerEvent: {}
+[6.626620] (-) TimerEvent: {}
+[6.727635] (-) TimerEvent: {}
+[6.828948] (-) TimerEvent: {}
+[6.930428] (-) TimerEvent: {}
+[7.031843] (-) TimerEvent: {}
+[7.133783] (-) TimerEvent: {}
+[7.235659] (-) TimerEvent: {}
+[7.336656] (-) TimerEvent: {}
+[7.437705] (-) TimerEvent: {}
+[7.539281] (-) TimerEvent: {}
+[7.640301] (-) TimerEvent: {}
+[7.741082] (-) TimerEvent: {}
+[7.842135] (-) TimerEvent: {}
+[7.950679] (-) TimerEvent: {}
+[8.052104] (-) TimerEvent: {}
+[8.153733] (-) TimerEvent: {}
+[8.255351] (-) TimerEvent: {}
+[8.346792] (encoder_pkg) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/encoder_pkg', 'build', '--build-base', '/home/pi/ros2_ws/build/encoder_pkg/build', 'install', '--record', '/home/pi/ros2_ws/build/encoder_pkg/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/pi/ros2_ws/src/encoder_pkg', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'ko:en', 'USER': 'pi', 'LC_TIME': 'ko_KR.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/pi', 'OLDPWD': '/home/pi/ros2_ws', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ko_KR.UTF-8', 'SYSTEMD_EXEC_PID': '2116', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'ROS_DISTRO': 'humble', 'LOGNAME': 'pi', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'pi', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/home/pi/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/pi:@/tmp/.ICE-unix/1853,unix/pi:/tmp/.ICE-unix/1853', 'FASTRTPS_DEFAULT_PROFILES_FILE': '/home/user/path/to/your/fastdds.xml', 'PAPERSIZE': 'a4', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ko_KR.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/dadb2228_ce79_4f92_9620_6bcfb5439ad4', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'ko_KR.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ko_KR.UTF-8', 'RMW_IMPLEMENTATION': 'rmw_cyclonedds_cpp', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.RJMMI3', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.128', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ko_KR.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ko_KR.UTF-8', 'LC_IDENTIFICATION': 'ko_KR.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/pi/ros2_ws/build/encoder_pkg', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/pi/ros2_ws/build/encoder_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ko_KR.UTF-8', 'LC_PAPER': 'ko_KR.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800'}, 'shell': False}
+[8.362644] (-) TimerEvent: {}
+[8.464255] (-) TimerEvent: {}
+[8.566901] (-) TimerEvent: {}
+[8.668392] (-) TimerEvent: {}
+[8.770215] (-) TimerEvent: {}
+[8.872286] (-) TimerEvent: {}
+[8.974222] (-) TimerEvent: {}
+[9.077262] (-) TimerEvent: {}
+[9.179790] (-) TimerEvent: {}
+[9.281303] (-) TimerEvent: {}
+[9.382959] (-) TimerEvent: {}
+[9.484552] (-) TimerEvent: {}
+[9.586024] (-) TimerEvent: {}
+[9.688937] (-) TimerEvent: {}
+[9.790768] (-) TimerEvent: {}
+[9.893131] (-) TimerEvent: {}
+[9.994527] (-) TimerEvent: {}
+[10.095489] (-) TimerEvent: {}
+[10.196626] (-) TimerEvent: {}
+[10.299217] (-) TimerEvent: {}
+[10.400680] (-) TimerEvent: {}
+[10.502058] (-) TimerEvent: {}
+[10.603049] (-) TimerEvent: {}
+[10.704702] (-) TimerEvent: {}
+[10.806345] (-) TimerEvent: {}
+[10.892999] (encoder_pkg) StdoutLine: {'line': b'running egg_info\n'}
+[10.898532] (encoder_pkg) StdoutLine: {'line': b'creating ../../build/encoder_pkg/encoder_pkg.egg-info\n'}
+[10.900962] (encoder_pkg) StdoutLine: {'line': b'writing ../../build/encoder_pkg/encoder_pkg.egg-info/PKG-INFO\n'}
+[10.903971] (encoder_pkg) StdoutLine: {'line': b'writing dependency_links to ../../build/encoder_pkg/encoder_pkg.egg-info/dependency_links.txt\n'}
+[10.907147] (-) TimerEvent: {}
+[10.910871] (encoder_pkg) StdoutLine: {'line': b'writing entry points to ../../build/encoder_pkg/encoder_pkg.egg-info/entry_points.txt\n'}
+[10.912972] (encoder_pkg) StdoutLine: {'line': b'writing requirements to ../../build/encoder_pkg/encoder_pkg.egg-info/requires.txt\n'}
+[10.914813] (encoder_pkg) StdoutLine: {'line': b'writing top-level names to ../../build/encoder_pkg/encoder_pkg.egg-info/top_level.txt\n'}
+[10.916177] (encoder_pkg) StdoutLine: {'line': b"writing manifest file '../../build/encoder_pkg/encoder_pkg.egg-info/SOURCES.txt'\n"}
+[10.926697] (encoder_pkg) StdoutLine: {'line': b"reading manifest file '../../build/encoder_pkg/encoder_pkg.egg-info/SOURCES.txt'\n"}
+[10.931119] (encoder_pkg) StdoutLine: {'line': b"writing manifest file '../../build/encoder_pkg/encoder_pkg.egg-info/SOURCES.txt'\n"}
+[10.932405] (encoder_pkg) StdoutLine: {'line': b'running build\n'}
+[10.934022] (encoder_pkg) StdoutLine: {'line': b'running build_py\n'}
+[10.934987] (encoder_pkg) StdoutLine: {'line': b'creating /home/pi/ros2_ws/build/encoder_pkg/build\n'}
+[10.936165] (encoder_pkg) StdoutLine: {'line': b'creating /home/pi/ros2_ws/build/encoder_pkg/build/lib\n'}
+[10.937027] (encoder_pkg) StdoutLine: {'line': b'creating /home/pi/ros2_ws/build/encoder_pkg/build/lib/encoder_pkg\n'}
+[10.938188] (encoder_pkg) StdoutLine: {'line': b'copying encoder_pkg/encoder_node.py -> /home/pi/ros2_ws/build/encoder_pkg/build/lib/encoder_pkg\n'}
+[10.939930] (encoder_pkg) StdoutLine: {'line': b'copying encoder_pkg/__init__.py -> /home/pi/ros2_ws/build/encoder_pkg/build/lib/encoder_pkg\n'}
+[10.941283] (encoder_pkg) StdoutLine: {'line': b'running install\n'}
+[10.943229] (encoder_pkg) StdoutLine: {'line': b'running install_lib\n'}
+[10.947734] (encoder_pkg) StdoutLine: {'line': b'creating /home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages/encoder_pkg\n'}
+[10.949551] (encoder_pkg) StdoutLine: {'line': b'copying /home/pi/ros2_ws/build/encoder_pkg/build/lib/encoder_pkg/encoder_node.py -> /home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages/encoder_pkg\n'}
+[10.950945] (encoder_pkg) StdoutLine: {'line': b'copying /home/pi/ros2_ws/build/encoder_pkg/build/lib/encoder_pkg/__init__.py -> /home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages/encoder_pkg\n'}
+[10.954460] (encoder_pkg) StdoutLine: {'line': b'byte-compiling /home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages/encoder_pkg/encoder_node.py to encoder_node.cpython-310.pyc\n'}
+[10.958801] (encoder_pkg) StdoutLine: {'line': b'byte-compiling /home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages/encoder_pkg/__init__.py to __init__.cpython-310.pyc\n'}
+[10.960529] (encoder_pkg) StdoutLine: {'line': b'running install_data\n'}
+[10.962265] (encoder_pkg) StdoutLine: {'line': b'creating /home/pi/ros2_ws/install/encoder_pkg/share/ament_index\n'}
+[10.963587] (encoder_pkg) StdoutLine: {'line': b'creating /home/pi/ros2_ws/install/encoder_pkg/share/ament_index/resource_index\n'}
+[10.964935] (encoder_pkg) StdoutLine: {'line': b'creating /home/pi/ros2_ws/install/encoder_pkg/share/ament_index/resource_index/packages\n'}
+[10.965802] (encoder_pkg) StdoutLine: {'line': b'copying resource/encoder_pkg -> /home/pi/ros2_ws/install/encoder_pkg/share/ament_index/resource_index/packages\n'}
+[10.966461] (encoder_pkg) StdoutLine: {'line': b'copying package.xml -> /home/pi/ros2_ws/install/encoder_pkg/share/encoder_pkg\n'}
+[10.967465] (encoder_pkg) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.973893] (encoder_pkg) StdoutLine: {'line': b'Copying ../../build/encoder_pkg/encoder_pkg.egg-info to /home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages/encoder_pkg-0.0.0-py3.10.egg-info\n'}
+[10.982784] (encoder_pkg) StdoutLine: {'line': b'running install_scripts\n'}
+[11.007565] (-) TimerEvent: {}
+[11.102763] (encoder_pkg) StdoutLine: {'line': b'Installing encoder_node script to /home/pi/ros2_ws/install/encoder_pkg/lib/encoder_pkg\n'}
+[11.105219] (encoder_pkg) StdoutLine: {'line': b"writing list of installed files to '/home/pi/ros2_ws/build/encoder_pkg/install.log'\n"}
+[11.108144] (-) TimerEvent: {}
+[11.212043] (-) TimerEvent: {}
+[11.316582] (-) TimerEvent: {}
+[11.347239] (encoder_pkg) CommandEnded: {'returncode': 0}
+[11.417359] (-) TimerEvent: {}
+[11.480020] (encoder_pkg) JobEnded: {'identifier': 'encoder_pkg', 'rc': 0}
+[11.488381] (-) EventReactorShutdown: {}

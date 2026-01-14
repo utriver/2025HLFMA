@@ -1,0 +1,37 @@
+[8.350s] Invoking command in '/home/pi/ros2_ws/src/encoder_pkg': PYTHONPATH=/home/pi/ros2_ws/build/encoder_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/encoder_pkg build --build-base /home/pi/ros2_ws/build/encoder_pkg/build install --record /home/pi/ros2_ws/build/encoder_pkg/install.log --single-version-externally-managed install_data
+[10.891s] running egg_info
+[10.897s] creating ../../build/encoder_pkg/encoder_pkg.egg-info
+[10.899s] writing ../../build/encoder_pkg/encoder_pkg.egg-info/PKG-INFO
+[10.903s] writing dependency_links to ../../build/encoder_pkg/encoder_pkg.egg-info/dependency_links.txt
+[10.910s] writing entry points to ../../build/encoder_pkg/encoder_pkg.egg-info/entry_points.txt
+[10.911s] writing requirements to ../../build/encoder_pkg/encoder_pkg.egg-info/requires.txt
+[10.912s] writing top-level names to ../../build/encoder_pkg/encoder_pkg.egg-info/top_level.txt
+[10.914s] writing manifest file '../../build/encoder_pkg/encoder_pkg.egg-info/SOURCES.txt'
+[10.925s] reading manifest file '../../build/encoder_pkg/encoder_pkg.egg-info/SOURCES.txt'
+[10.929s] writing manifest file '../../build/encoder_pkg/encoder_pkg.egg-info/SOURCES.txt'
+[10.931s] running build
+[10.932s] running build_py
+[10.933s] creating /home/pi/ros2_ws/build/encoder_pkg/build
+[10.934s] creating /home/pi/ros2_ws/build/encoder_pkg/build/lib
+[10.935s] creating /home/pi/ros2_ws/build/encoder_pkg/build/lib/encoder_pkg
+[10.936s] copying encoder_pkg/encoder_node.py -> /home/pi/ros2_ws/build/encoder_pkg/build/lib/encoder_pkg
+[10.937s] copying encoder_pkg/__init__.py -> /home/pi/ros2_ws/build/encoder_pkg/build/lib/encoder_pkg
+[10.939s] running install
+[10.941s] running install_lib
+[10.946s] creating /home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages/encoder_pkg
+[10.947s] copying /home/pi/ros2_ws/build/encoder_pkg/build/lib/encoder_pkg/encoder_node.py -> /home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages/encoder_pkg
+[10.949s] copying /home/pi/ros2_ws/build/encoder_pkg/build/lib/encoder_pkg/__init__.py -> /home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages/encoder_pkg
+[10.952s] byte-compiling /home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages/encoder_pkg/encoder_node.py to encoder_node.cpython-310.pyc
+[10.957s] byte-compiling /home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages/encoder_pkg/__init__.py to __init__.cpython-310.pyc
+[10.959s] running install_data
+[10.960s] creating /home/pi/ros2_ws/install/encoder_pkg/share/ament_index
+[10.962s] creating /home/pi/ros2_ws/install/encoder_pkg/share/ament_index/resource_index
+[10.962s] creating /home/pi/ros2_ws/install/encoder_pkg/share/ament_index/resource_index/packages
+[10.963s] copying resource/encoder_pkg -> /home/pi/ros2_ws/install/encoder_pkg/share/ament_index/resource_index/packages
+[10.964s] copying package.xml -> /home/pi/ros2_ws/install/encoder_pkg/share/encoder_pkg
+[10.965s] running install_egg_info
+[10.972s] Copying ../../build/encoder_pkg/encoder_pkg.egg-info to /home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages/encoder_pkg-0.0.0-py3.10.egg-info
+[10.980s] running install_scripts
+[11.100s] Installing encoder_node script to /home/pi/ros2_ws/install/encoder_pkg/lib/encoder_pkg
+[11.103s] writing list of installed files to '/home/pi/ros2_ws/build/encoder_pkg/install.log'
+[11.346s] Invoked command in '/home/pi/ros2_ws/src/encoder_pkg' returned '0': PYTHONPATH=/home/pi/ros2_ws/build/encoder_pkg/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/pi/ros2_ws/install/encoder_pkg/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/encoder_pkg build --build-base /home/pi/ros2_ws/build/encoder_pkg/build install --record /home/pi/ros2_ws/build/encoder_pkg/install.log --single-version-externally-managed install_data
